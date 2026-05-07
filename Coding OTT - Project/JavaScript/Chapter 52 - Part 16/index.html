@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>Chapter 24: Part 3</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript
+    Chapter 52: Part 16
+    Date: 7-05-2026 | 12:55 PM - 01:37 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="notes-app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="ri-sticky-note-line"></i>
+                <h2>NotesHub</h2>
+            </div>
+
+            <div class="menu">
+
+                <button id="newNoteBtn" onclick="createNote()">
+                    <i class="ri-add-circle-line"></i>
+                    Create Note
+                </button>
+
+                <label id="loadNoteBtn" for="fileInput">
+                    <i class="ri-folder-open-line"></i>
+                    Load Note
+
+                </label>
+
+                <input type="file" accept=".txt" hidden id="fileInput" onchange="loadNotes()">
+
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <div class="top-bar">
+                <h1>Notes Management System</h1>
+            </div>
+
+            <!-- Form -->
+            <div class="note-box">
+
+                <div class="input-group">
+                    <label>Note File Name</label>
+                    <input type="text" id="noteTitle" placeholder="Enter file name">
+                </div>
+
+                <div class="input-group">
+                    <label>Write Your Notes</label>
+                    <textarea id="noteContent" rows="12" placeholder="Write your notes here..."></textarea>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>
