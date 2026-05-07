@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>JS - 75 DAYS - PROJECT</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 7
+    Date: 7-05-2026 | 1:50 PM - 2:27 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="title">
+            <h1>Day 7 + Day 8 Projects</h1>
+            <p>Background color changer + color picker project</p>
+        </div>
+
+        <div class="grid">
+
+            <!-- DAY 7 CARD -->
+            <div class="card">
+                <h2><i class="ri-brush-line"></i> Day 7 - Background Color Changer</h2>
+                <p>
+                    Enter any color name (red, blue) or hex code (#ff0000).
+                    Button click par body ka background change ho jayega.
+                </p>
+
+                <div class="input-group">
+                    <input type="text" id="colorInput" placeholder="Enter color name or hex code..." />
+                    <button onclick="changeBg()">
+                        <i class="ri-check-line"></i> Apply
+                    </button>
+                </div>
+
+                <div class="preview">
+                    <span id="day7Text">Current Color: Default</span>
+                    <div class="color-box" id="day7Box"></div>
+                </div>
+            </div>
+
+            <!-- DAY 8 CARD -->
+            <div class="card">
+                <h2><i class="ri-palette-line"></i> Day 8 - Color Picker</h2>
+                <p>
+                    Select color from picker. Selected color card ke preview box me apply hoga
+                    aur hex code screen par show hoga.
+                </p>
+
+                <div class="input-group">
+                    <input type="color" id="colorPicker" oninput="colorSelector(this.value)" />
+                </div>
+
+                <div class="preview">
+                    <span id="hexCode">Hex Code: #000000</span>
+                    <div class="color-box" id="day8Box"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            © 2026 | Built By Sarfraj Shaikh | HTML + CSS + JS
+        </div>
+
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>
