@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>JS - 75 DAYS - PROJECT</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 9
+    Date: 7-05-2026 | 3:49 PM - 4:11 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- ================= TASK 1 ================= -->
+        <div class="card">
+            <h1 class="main-heading">
+                <i class="ri-palette-line"></i> Task 1 - Color Picker
+            </h1>
+
+            <div class="content-box">
+                <h2 class="title active" id="title" onclick="elementSelector('title')">
+                    Card Title
+                </h2>
+
+                <p class="desc" id="desc" onclick="elementSelector('desc')">
+                    This is a description. Click on title or description, then pick a color to change only that text.
+                </p>
+            </div>
+
+            <div class="controls">
+                <label class="label">
+                    <i class="ri-brush-line"></i> Pick Color
+                </label>
+
+                <input type="color" id="colorPicker">
+
+                <div class="hex-box">
+                    HEX Code: <span id="hexCode">#000000</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= TASK 2 ================= -->
+        <div class="card">
+            <h1 class="main-heading">
+                <i class="ri-login-circle-line"></i> Task 2 - Login Form
+            </h1>
+
+            <form class="login-form" id="loginForm">
+
+                <div class="input-box">
+                    <label>Email ID</label>
+                    <div class="input-field">
+                        <i class="ri-mail-line"></i>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label>Password</label>
+                    <div class="input-field">
+                        <i class="ri-lock-line"></i>
+                        <input type="password" placeholder="Enter your password" required minlength="6" maxlength="25">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">
+                    <i class="ri-login-box-line"></i> Login
+                </button>
+
+                <p class="message" id="message"></p>
+
+            </form>
+        </div>
+
+    </div>
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>
