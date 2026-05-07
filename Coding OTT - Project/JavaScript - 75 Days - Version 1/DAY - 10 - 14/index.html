@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>JS - 75 DAYS - PROJECT</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 10 - 14
+    Date: 7-05-2026 | 4:15 PM - 4:43 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-wrapper">
+
+            <!-- Left Side -->
+            <div class="info-box">
+                <h1>User Auth System</h1>
+                <p>
+                    Register and Login system using <b>Array + Object</b>.
+                    Same email par user object update hoga.
+                </p>
+
+                <div class="feature">
+                    <i class="ri-shield-user-line"></i>
+                    <span>Secure Registration</span>
+                </div>
+
+                <div class="feature">
+                    <i class="ri-database-2-line"></i>
+                    <span>Data Stored in Array</span>
+                </div>
+
+                <div class="feature">
+                    <i class="ri-refresh-line"></i>
+                    <span>Email Duplicate = Update</span>
+                </div>
+
+                <div class="feature">
+                    <i class="ri-login-circle-line"></i>
+                    <span>Login Authentication</span>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="forms-box">
+
+                <div class="tabs">
+                    <button class="tab-btn active" id="regTab">Register</button>
+                    <button class="tab-btn" id="loginTab">Login</button>
+                </div>
+
+                <!-- Registration Form -->
+                <form id="registerForm" class="form active-form">
+                    <h2>Create Account</h2>
+
+                    <div class="input-box">
+                        <label>Full Name</label>
+                        <div class="input-field">
+                            <i class="ri-user-line"></i>
+                            <input type="text" id="regName" placeholder="Enter your name" required />
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Email</label>
+                        <div class="input-field">
+                            <i class="ri-mail-line"></i>
+                            <input type="email" id="regEmail" placeholder="Enter your email" required />
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Password</label>
+                        <div class="input-field">
+                            <i class="ri-lock-line"></i>
+                            <input type="password" id="regPassword" placeholder="Enter password" required />
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Phone</label>
+                        <div class="input-field">
+                            <i class="ri-phone-line"></i>
+                            <input type="text" id="regPhone" placeholder="Enter phone number" required />
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">Register</button>
+                </form>
+
+                <!-- Login Form -->
+                <form id="loginForm" class="form">
+                    <h2>Welcome Back</h2>
+
+                    <div class="input-box">
+                        <label>Email</label>
+                        <div class="input-field">
+                            <i class="ri-mail-line"></i>
+                            <input type="email" id="loginEmail" placeholder="Enter your email" required />
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Password</label>
+                        <div class="input-field">
+                            <i class="ri-lock-line"></i>
+                            <input type="password" id="loginPassword" placeholder="Enter password" required />
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">Login</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Dialog -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box animate__animated" id="popupBox">
+            <div class="popup-icon" id="popupIcon">
+                <i class="ri-information-line"></i>
+            </div>
+            <h3 id="popupTitle">Message</h3>
+            <p id="popupMessage">Popup message here...</p>
+            <button class="popup-btn" id="closePopup">OK</button>
+        </div>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>
