@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #dff6ff, #fbe7ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2rem;
+    color: #222;
+}
+
+.sub-title {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.alphabet-box {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 15px;
+}
+
+.alphabet-card {
+    background: #f3f3f3;
+    padding: 18px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.alphabet-card:hover {
+    background: #00b4d8;
+    color: white;
+    transform: scale(1.05);
+}
+
+.alphabet-card.active {
+    border: 2px solid #00b4d8;
+    background: #caf0f8;
+    color: #111;
+}
+
+.output-box {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f8f8f8;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.output-box h2 {
+    font-size: 1.6rem;
+    color: #222;
+}
+
+.mic-icon {
+    font-size: 2rem;
+    padding: 12px 16px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.mic-icon.active {
+    background: #00b4d8;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 180, 216, 0.6);
+    animation: pulse 0.8s infinite alternate;
+}
+
+.mic-icon.inactive {
+    background: #ccc;
+    color: #555;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .output-box h2 {
+        font-size: 1.3rem;
+    }
+}
