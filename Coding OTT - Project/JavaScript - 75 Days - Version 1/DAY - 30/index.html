@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>JS - 75 DAYS - PROJECT</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 30
+    Date: 9-05-2026 | 1:22 PM - 1:48 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="ri-magic-line"></i>
+                <h1>Animify</h1>
+            </div>
+            <p>Modern Animate.css Preview Tool</p>
+        </header>
+
+        <!-- Main Layout -->
+        <div class="container">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h2><i class="ri-flashlight-line"></i> Animations</h2>
+
+                <div class="animation-grid">
+
+                    <!-- Attention Seekers -->
+                    <h3 class="category-title">Attention Seekers</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__bounce')">
+                        <i class="ri-bubble-chart-fill"></i> bounce
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__flash')">
+                        <i class="ri-lightbulb-flash-line"></i> flash
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__pulse')">
+                        <i class="ri-pulse-line"></i> pulse
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rubberBand')">
+                        <i class="ri-shape-2-line"></i> rubberBand
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__shakeX')">
+                        <i class="ri-shake-hands-line"></i> shakeX
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__shakeY')">
+                        <i class="ri-shake-hands-fill"></i> shakeY
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__headShake')">
+                        <i class="ri-emotion-normal-line"></i> headShake
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__swing')">
+                        <i class="ri-loop-left-line"></i> swing
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__tada')">
+                        <i class="ri-sparkling-line"></i> tada
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__wobble')">
+                        <i class="ri-refresh-line"></i> wobble
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__jello')">
+                        <i class="ri-water-flash-line"></i> jello
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__heartBeat')">
+                        <i class="ri-heart-pulse-line"></i> heartBeat
+                    </button>
+
+
+                    <!-- Back Entrances -->
+                    <h3 class="category-title">Back Entrances</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__backInDown')">
+                        <i class="ri-arrow-down-line"></i> backInDown
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__backInLeft')">
+                        <i class="ri-arrow-left-line"></i> backInLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__backInRight')">
+                        <i class="ri-arrow-right-line"></i> backInRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__backInUp')">
+                        <i class="ri-arrow-up-line"></i> backInUp
+                    </button>
+
+
+                    <!-- Back Exits -->
+                    <h3 class="category-title">Back Exits</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__backOutDown')">
+                        <i class="ri-arrow-down-line"></i> backOutDown
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__backOutLeft')">
+                        <i class="ri-arrow-left-line"></i> backOutLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__backOutRight')">
+                        <i class="ri-arrow-right-line"></i> backOutRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__backOutUp')">
+                        <i class="ri-arrow-up-line"></i> backOutUp
+                    </button>
+
+
+                    <!-- Bouncing Entrances -->
+                    <h3 class="category-title">Bouncing Entrances</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__bounceIn')">
+                        <i class="ri-bubble-chart-line"></i> bounceIn
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__bounceInDown')">
+                        <i class="ri-arrow-down-line"></i> bounceInDown
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__bounceInLeft')">
+                        <i class="ri-arrow-left-line"></i> bounceInLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__bounceInRight')">
+                        <i class="ri-arrow-right-line"></i> bounceInRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__bounceInUp')">
+                        <i class="ri-arrow-up-line"></i> bounceInUp
+                    </button>
+
+
+                    <!-- Bouncing Exits -->
+                    <h3 class="category-title">Bouncing Exits</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__bounceOut')">
+                        <i class="ri-bubble-chart-fill"></i> bounceOut
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__bounceOutDown')">
+                        <i class="ri-arrow-down-line"></i> bounceOutDown
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__bounceOutLeft')">
+                        <i class="ri-arrow-left-line"></i> bounceOutLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__bounceOutRight')">
+                        <i class="ri-arrow-right-line"></i> bounceOutRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__bounceOutUp')">
+                        <i class="ri-arrow-up-line"></i> bounceOutUp
+                    </button>
+
+
+                    <!-- Fading Entrances -->
+                    <h3 class="category-title">Fading Entrances</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeIn')">
+                        <i class="ri-drop-line"></i> fadeIn
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInDown')">
+                        <i class="ri-arrow-down-line"></i> fadeInDown
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInDownBig')">
+                        <i class="ri-arrow-down-double-line"></i> fadeInDownBig
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInLeft')">
+                        <i class="ri-arrow-left-line"></i> fadeInLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInLeftBig')">
+                        <i class="ri-arrow-left-double-line"></i> fadeInLeftBig
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInRight')">
+                        <i class="ri-arrow-right-line"></i> fadeInRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInRightBig')">
+                        <i class="ri-arrow-right-double-line"></i> fadeInRightBig
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInUp')">
+                        <i class="ri-arrow-up-line"></i> fadeInUp
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInUpBig')">
+                        <i class="ri-arrow-up-double-line"></i> fadeInUpBig
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInTopLeft')">
+                        <i class="ri-corner-left-up-line"></i> fadeInTopLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInTopRight')">
+                        <i class="ri-corner-right-up-line"></i> fadeInTopRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInBottomLeft')">
+                        <i class="ri-corner-left-down-line"></i> fadeInBottomLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeInBottomRight')">
+                        <i class="ri-corner-right-down-line"></i> fadeInBottomRight
+                    </button>
+
+
+                    <!-- Fading Exits -->
+                    <h3 class="category-title">Fading Exits</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOut')">
+                        <i class="ri-contrast-drop-line"></i> fadeOut
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutDown')">
+                        <i class="ri-arrow-down-line"></i> fadeOutDown
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutDownBig')">
+                        <i class="ri-arrow-down-double-line"></i> fadeOutDownBig
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutLeft')">
+                        <i class="ri-arrow-left-line"></i> fadeOutLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutLeftBig')">
+                        <i class="ri-arrow-left-double-line"></i> fadeOutLeftBig
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutRight')">
+                        <i class="ri-arrow-right-line"></i> fadeOutRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutRightBig')">
+                        <i class="ri-arrow-right-double-line"></i> fadeOutRightBig
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutUp')">
+                        <i class="ri-arrow-up-line"></i> fadeOutUp
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutUpBig')">
+                        <i class="ri-arrow-up-double-line"></i> fadeOutUpBig
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutTopLeft')">
+                        <i class="ri-corner-left-up-line"></i> fadeOutTopLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutTopRight')">
+                        <i class="ri-corner-right-up-line"></i> fadeOutTopRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutBottomRight')">
+                        <i class="ri-corner-right-down-line"></i> fadeOutBottomRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__fadeOutBottomLeft')">
+                        <i class="ri-corner-left-down-line"></i> fadeOutBottomLeft
+                    </button>
+
+
+                    <!-- Flippers -->
+                    <h3 class="category-title">Flippers</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__flip')">
+                        <i class="ri-repeat-2-line"></i> flip
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__flipInX')">
+                        <i class="ri-loop-left-line"></i> flipInX
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__flipInY')">
+                        <i class="ri-loop-right-line"></i> flipInY
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__flipOutX')">
+                        <i class="ri-logout-box-r-line"></i> flipOutX
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__flipOutY')">
+                        <i class="ri-logout-box-l-line"></i> flipOutY
+                    </button>
+
+
+                    <!-- Lightspeed -->
+                    <h3 class="category-title">Lightspeed</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__lightSpeedInRight')">
+                        <i class="ri-speed-line"></i> lightSpeedInRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__lightSpeedInLeft')">
+                        <i class="ri-speed-up-line"></i> lightSpeedInLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__lightSpeedOutRight')">
+                        <i class="ri-send-plane-line"></i> lightSpeedOutRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__lightSpeedOutLeft')">
+                        <i class="ri-send-plane-fill"></i> lightSpeedOutLeft
+                    </button>
+
+
+                    <!-- Rotating Entrances -->
+                    <h3 class="category-title">Rotating Entrances</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rotateIn')">
+                        <i class="ri-refresh-line"></i> rotateIn
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rotateInDownLeft')">
+                        <i class="ri-anticlockwise-line"></i> rotateInDownLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rotateInDownRight')">
+                        <i class="ri-clockwise-line"></i> rotateInDownRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rotateInUpLeft')">
+                        <i class="ri-arrow-left-up-line"></i> rotateInUpLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rotateInUpRight')">
+                        <i class="ri-arrow-right-up-line"></i> rotateInUpRight
+                    </button>
+
+
+                    <!-- Rotating Exits -->
+                    <h3 class="category-title">Rotating Exits</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rotateOut')">
+                        <i class="ri-refresh-fill"></i> rotateOut
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rotateOutDownLeft')">
+                        <i class="ri-arrow-left-down-line"></i> rotateOutDownLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rotateOutDownRight')">
+                        <i class="ri-arrow-right-down-line"></i> rotateOutDownRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rotateOutUpLeft')">
+                        <i class="ri-arrow-left-up-line"></i> rotateOutUpLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rotateOutUpRight')">
+                        <i class="ri-arrow-right-up-line"></i> rotateOutUpRight
+                    </button>
+
+
+                    <!-- Specials -->
+                    <h3 class="category-title">Specials</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__hinge')">
+                        <i class="ri-door-open-line"></i> hinge
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__jackInTheBox')">
+                        <i class="ri-box-3-line"></i> jackInTheBox
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rollIn')">
+                        <i class="ri-login-box-line"></i> rollIn
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__rollOut')">
+                        <i class="ri-logout-box-line"></i> rollOut
+                    </button>
+
+
+                    <!-- Zooming Entrances -->
+                    <h3 class="category-title">Zooming Entrances</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__zoomIn')">
+                        <i class="ri-zoom-in-line"></i> zoomIn
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__zoomInDown')">
+                        <i class="ri-arrow-down-line"></i> zoomInDown
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__zoomInLeft')">
+                        <i class="ri-arrow-left-line"></i> zoomInLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__zoomInRight')">
+                        <i class="ri-arrow-right-line"></i> zoomInRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__zoomInUp')">
+                        <i class="ri-arrow-up-line"></i> zoomInUp
+                    </button>
+
+
+                    <!-- Zooming Exits -->
+                    <h3 class="category-title">Zooming Exits</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__zoomOut')">
+                        <i class="ri-zoom-out-line"></i> zoomOut
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__zoomOutDown')">
+                        <i class="ri-arrow-down-line"></i> zoomOutDown
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__zoomOutLeft')">
+                        <i class="ri-arrow-left-line"></i> zoomOutLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__zoomOutRight')">
+                        <i class="ri-arrow-right-line"></i> zoomOutRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__zoomOutUp')">
+                        <i class="ri-arrow-up-line"></i> zoomOutUp
+                    </button>
+
+
+                    <!-- Sliding Entrances -->
+                    <h3 class="category-title">Sliding Entrances</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__slideInDown')">
+                        <i class="ri-arrow-down-line"></i> slideInDown
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__slideInLeft')">
+                        <i class="ri-arrow-left-line"></i> slideInLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__slideInRight')">
+                        <i class="ri-arrow-right-line"></i> slideInRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__slideInUp')">
+                        <i class="ri-arrow-up-line"></i> slideInUp
+                    </button>
+
+
+                    <!-- Sliding Exits -->
+                    <h3 class="category-title">Sliding Exits</h3>
+
+                    <button class="anim-btn" onclick="showPreview('animate__slideOutDown')">
+                        <i class="ri-arrow-down-line"></i> slideOutDown
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__slideOutLeft')">
+                        <i class="ri-arrow-left-line"></i> slideOutLeft
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__slideOutRight')">
+                        <i class="ri-arrow-right-line"></i> slideOutRight
+                    </button>
+
+                    <button class="anim-btn" onclick="showPreview('animate__slideOutUp')">
+                        <i class="ri-arrow-up-line"></i> slideOutUp
+                    </button>
+
+                </div>
+            </aside>
+
+            <!-- Preview Section -->
+            <main class="preview-area">
+                <div class="preview-header">
+                    <h2><i class="ri-eye-line"></i> Live Preview</h2>
+                    <span class="badge" id="animName">Select Animation</span>
+                </div>
+
+                <div class="preview-box">
+                    <div class="preview-item" id="preview">
+                        <i class="ri-emotion-happy-line"></i>
+                        <h3>Preview Element</h3>
+                        <p>Click any animation button to preview effect.</p>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>
