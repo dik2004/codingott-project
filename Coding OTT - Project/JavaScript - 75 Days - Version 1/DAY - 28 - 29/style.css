@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+}
+
+.app {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header p {
+    margin-top: 8px;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+}
+
+.controls {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 18px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controls h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #f8fafc;
+}
+
+.controls button {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+}
+
+.controls button.danger {
+    background: rgba(255, 0, 0, 0.12);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.controls button.danger:hover {
+    background: rgba(255, 0, 0, 0.25);
+}
+
+.output {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 18px;
+    border-radius: 12px;
+    min-height: 500px;
+}
+
+.output-header h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.output-header p {
+    margin-top: 6px;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+.display-area {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    min-height: 350px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.display-area h1,
+.display-area h2,
+.display-area h3,
+.display-area h4,
+.display-area h5,
+.display-area h6 {
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.display-area p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #e2e8f0;
+}
+
+.display-area ol,
+.display-area ul {
+    margin: 10px 0 15px 20px;
+    padding-left: 20px;
+    color: #f1f5f9;
+}
+
+.display-area li {
+    margin-bottom: 6px;
+}
+
+@media (max-width: 850px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .controls {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .controls button {
+        flex: 1 1 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .controls button {
+        flex: 1 1 100%;
+    }
+}
