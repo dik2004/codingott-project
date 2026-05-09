@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Marksheet</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body onload="protectPage(); loadMarksheets();">
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <i class="ri-school-line"></i>
+      <span>MarksheetPro</span>
+    </div>
+
+    <a href="dashboard.html"><i class="ri-dashboard-line"></i> Dashboard</a>
+    <a href="add-student.html"><i class="ri-user-add-line"></i> Add Student</a>
+    <a href="manage-students.html"><i class="ri-team-line"></i> Manage Students</a>
+
+    <a href="add-marksheet.html"><i class="ri-file-add-line"></i> Add Marksheet</a>
+    <a href="manage-marksheet.html" class="active"><i class="ri-file-list-3-line"></i> Manage Marksheet</a>
+
+    <a href="#" onclick="logoutSchool()"><i class="ri-logout-box-line"></i> Logout</a>
+  </aside>
+
+  <main class="main-content">
+    <h1 class="page-title">Manage Marksheets</h1>
+    <p class="page-subtitle">View/Delete saved marksheets.</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Student Name</th>
+            <th>Class</th>
+            <th>Roll</th>
+            <th>Subjects</th>
+            <th>Created Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="marksheetTableBody"></tbody>
+      </table>
+    </div>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

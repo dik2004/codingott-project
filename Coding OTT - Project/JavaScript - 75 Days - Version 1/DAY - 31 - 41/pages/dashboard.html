@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fav Icon -->
+  <link rel="shortcut icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+    type="image/x-icon">
+  <title>JS - 75 DAYS - PROJECT</title>
+  <!-- I'm Using External JavaScript for Task -->
+  <script src="../js/dashboard.js" defer></script>
+  <!-- I'm Using External CSS for Task -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Remix Icon CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <!-- Animated CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+  <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 31 - 41
+    Date: 9-05-2026 | 4:33 PM - 4:55 PM
+    =====================================-->
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <i class="ri-school-line"></i>
+        <span>Dashboard</span>
+      </div>
+
+      <h3>MAIN MENU</h3>
+
+      <a href="./dashboard.html" class="active">
+        <i class="ri-dashboard-line"></i> Dashboard
+      </a>
+
+      <a href="./add-student.html">
+        <i class="ri-user-add-line"></i> Add New Student
+      </a>
+
+      <a href="./manage-students.html">
+        <i class="ri-team-line"></i> Manage Students
+      </a>
+
+      <a href="./add-marksheet.html">
+        <i class="ri-file-add-line"></i> Add Marksheet
+      </a>
+
+      <a href="./manage-marksheet.html">
+        <i class="ri-file-list-3-line"></i> Manage Marksheet
+      </a>
+
+      <a href="#" onclick="logoutSchool()">
+        <i class="ri-logout-box-line"></i> Logout
+      </a>
+    </aside>
+
+    <main class="main-content">
+
+      <div class="profile-box">
+        <img id="schoolLogo" src="">
+        <div>
+          <h2 id="schoolTitle"></h2>
+          <p id="schoolTagline"></p>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3 id="totalStudents">0</h3>
+          <p>Total Students</p>
+        </div>
+
+        <div class="stat-card">
+          <h3 id="totalMarksheets">0</h3>
+          <p>Total Marksheets</p>
+        </div>
+
+        <div class="stat-card">
+          <h3 id="schoolMedium">-</h3>
+          <p>Medium</p>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>

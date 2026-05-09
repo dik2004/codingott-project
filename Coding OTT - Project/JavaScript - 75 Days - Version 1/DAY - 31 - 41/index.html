@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>JS - 75 DAYS - PROJECT</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 31 - 41
+    Date: 9-05-2026 | 2:42 PM - : PM
+    =====================================-->
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container topbar-flex">
+            <div class="brand">
+                <i class="ri-school-line"></i>
+                <span>MarksheetPro</span>
+            </div>
+
+            <nav class="navlinks">
+                <a href="#features">Features</a>
+                <a href="#modules">Modules</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <div class="topbar-actions">
+                <a href="./pages/register.html" class="btn btn-outline">
+                    <i class="ri-user-add-line"></i> Register School
+                </a>
+                <a href="./pages/login.html" class="btn btn-primary">
+                    <i class="ri-login-circle-line"></i> Login School
+                </a>
+            </div>
+
+            <button class="menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+
+            <div class="hero-content">
+                <p class="hero-badge">
+                    <i class="ri-shield-check-line"></i> LocalStorage Based System
+                </p>
+
+                <h1>
+                    Professional <span>Marksheet Generator</span> Tool
+                </h1>
+
+                <p class="hero-text">
+                    Create students, generate marksheets, manage records, and export PDF files
+                    using a clean and modern dashboard. Fully offline system based on LocalStorage.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="./pages/register.html" class="btn btn-primary">
+                        <i class="ri-user-add-line"></i> Register School
+                    </a>
+                    <a href="./pages/login.html" class="btn btn-outline">
+                        <i class="ri-login-circle-line"></i> Login School
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Offline Storage</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>CRUD</h3>
+                        <p>Students & Marksheet</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>PDF</h3>
+                        <p>Export Feature</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hero-card">
+                <div class="hero-card-top">
+                    <h3>System Modules</h3>
+                    <p>Complete school marksheet management tool</p>
+                </div>
+
+                <div class="module-list">
+                    <div class="module-item">
+                        <i class="ri-building-4-line"></i>
+                        <div>
+                            <h4>School Registration</h4>
+                            <p>Store school profile & logo securely</p>
+                        </div>
+                    </div>
+
+                    <div class="module-item">
+                        <i class="ri-team-line"></i>
+                        <div>
+                            <h4>Students Management</h4>
+                            <p>Add, edit, delete student records</p>
+                        </div>
+                    </div>
+
+                    <div class="module-item">
+                        <i class="ri-file-list-3-line"></i>
+                        <div>
+                            <h4>Marksheet Generator</h4>
+                            <p>Create marksheets with subjects & marks</p>
+                        </div>
+                    </div>
+
+                    <div class="module-item">
+                        <i class="ri-printer-line"></i>
+                        <div>
+                            <h4>PDF Export</h4>
+                            <p>Download marksheet in PDF format</p>
+                        </div>
+                    </div>
+
+                    <div class="module-item">
+                        <i class="ri-dashboard-line"></i>
+                        <div>
+                            <h4>Dashboard</h4>
+                            <p>Modern sidebar navigation system</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-card-footer">
+                    <a href="./pages/register.html" class="btn btn-primary w-100">
+                        <i class="ri-arrow-right-line"></i> Start Now
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Key Features</h2>
+                <p>Designed for schools to manage student and marksheet records professionally.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <i class="ri-lock-line"></i>
+                    <h3>Secure Login</h3>
+                    <p>School login system based on LocalStorage authentication.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-database-2-line"></i>
+                    <h3>Local Database</h3>
+                    <p>All school, student, and marksheet data stored offline.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-edit-box-line"></i>
+                    <h3>CRUD System</h3>
+                    <p>Create, Read, Update and Delete operations for all modules.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-file-pdf-2-line"></i>
+                    <h3>PDF Export</h3>
+                    <p>Download professional marksheet as PDF using jsPDF/html2pdf.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-device-line"></i>
+                    <h3>Responsive UI</h3>
+                    <p>Mobile, tablet and desktop friendly professional layout.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-check-double-line"></i>
+                    <h3>Validations</h3>
+                    <p>Form validations like email, empty fields, marks limit etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modules" id="modules">
+        <div class="container">
+            <div class="section-title">
+                <h2>Included Modules</h2>
+                <p>Full project structure based on your JS tasks.</p>
+            </div>
+
+            <div class="modules-grid">
+                <div class="module-card">
+                    <i class="ri-user-add-line"></i>
+                    <h3>School Registration</h3>
+                    <p>Store school profile including logo, tagline, medium, registration number.</p>
+                </div>
+
+                <div class="module-card">
+                    <i class="ri-login-box-line"></i>
+                    <h3>School Login</h3>
+                    <p>Login system with session and LocalStorage based authentication.</p>
+                </div>
+
+                <div class="module-card">
+                    <i class="ri-user-3-line"></i>
+                    <h3>Add Student</h3>
+                    <p>Student form with photo, personal details, parents details, roll number.</p>
+                </div>
+
+                <div class="module-card">
+                    <i class="ri-table-line"></i>
+                    <h3>Manage Students</h3>
+                    <p>Students list with edit/delete actions.</p>
+                </div>
+
+                <div class="module-card">
+                    <i class="ri-file-edit-line"></i>
+                    <h3>Add Marksheet</h3>
+                    <p>Select student, add subjects, total marks, obtained marks.</p>
+                </div>
+
+                <div class="module-card">
+                    <i class="ri-file-search-line"></i>
+                    <h3>Manage Marksheet</h3>
+                    <p>View, edit, delete, print and export PDF marksheets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container about-box">
+            <div class="about-left">
+                <h2>Why This Project?</h2>
+                <p>
+                    This project is built for JavaScript practice and real-world CRUD based systems.
+                    It includes LocalStorage database, authentication, dashboard, students module,
+                    marksheet generator and PDF export.
+                </p>
+
+                <ul class="about-list">
+                    <li><i class="ri-check-line"></i> Professional UI</li>
+                    <li><i class="ri-check-line"></i> Full CRUD operations</li>
+                    <li><i class="ri-check-line"></i> LocalStorage Based Database</li>
+                    <li><i class="ri-check-line"></i> PDF Export Ready</li>
+                </ul>
+            </div>
+
+            <div class="about-right">
+                <div class="about-card">
+                    <h3>Get Started</h3>
+                    <p>Create your school account and start managing students instantly.</p>
+
+                    <div class="about-actions">
+                        <a href="./pages/register.html" class="btn btn-primary w-100">
+                            <i class="ri-user-add-line"></i> Register School
+                        </a>
+                        <a href="./pages/login.html" class="btn btn-outline w-100">
+                            <i class="ri-login-circle-line"></i> Login School
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-left">
+                <div class="brand footer-brand">
+                    <i class="ri-school-line"></i>
+                    <span>MarksheetPro</span>
+                </div>
+                <p>
+                    A professional LocalStorage based Marksheet Generator Tool.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+                <a href="#">Support</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                <a href="#"><i class="ri-github-fill"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Developed By <b>Mo. Sarfraj Shaikh</b></p>
+        </div>
+    </footer>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>

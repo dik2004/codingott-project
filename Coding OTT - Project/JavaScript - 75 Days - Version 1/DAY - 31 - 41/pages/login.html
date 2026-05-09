@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fav Icon -->
+  <link rel="shortcut icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+    type="image/x-icon">
+  <title>JS - 75 DAYS - PROJECT</title>
+  <!-- I'm Using External JavaScript for Task -->
+  <script src="../js/login.js" defer></script>
+  <!-- I'm Using External CSS for Task -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Remix Icon CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <!-- Animated CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+  <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 31 - 41
+    Date: 9-05-2026 | 4:19 PM - 4:32 PM
+    =====================================-->
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-flex">
+      <div class="brand">
+        <i class="ri-school-line"></i>
+        <span>MarksheetPro</span>
+      </div>
+
+      <a href="../index.html" class="btn btn-outline">
+        <i class="ri-home-line"></i> Home
+      </a>
+    </div>
+  </header>
+
+  <section style="padding:60px 0;">
+    <div class="container" style="max-width:550px;">
+      <div class="card">
+        <h1 class="page-title">School Login</h1>
+        <p class="page-subtitle">Login to access your dashboard.</p>
+
+        <div id="msgBox"></div>
+
+        <form onsubmit="loginSchool(event)">
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="loginEmail" placeholder="Enter Email">
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <input type="password" id="loginPassword" placeholder="Enter Password">
+          </div>
+
+          <button class="btn btn-primary w-100">
+            <i class="ri-login-circle-line"></i> Login
+          </button>
+
+          <p style="text-align:center; margin-top:14px; font-size:14px;">
+            Don't have account? <a href="./register.html" style="color:var(--primary); font-weight:700;">Register
+              Now</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
