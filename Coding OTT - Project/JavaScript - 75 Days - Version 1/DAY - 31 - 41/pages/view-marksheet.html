@@ -1,109 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>View Marksheet</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fav Icon -->
+  <link rel="shortcut icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+    type="image/x-icon">
+  <title>JS - 75 DAYS - PROJECT</title>
+  <!-- I'm Using External JavaScript for Task -->
+  <script src="../js/view-marksheet.js" defer></script>
+  <!-- I'm Using External CSS for Task -->
+  <link rel="stylesheet" href="../style.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <!-- Remix Icon CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <!-- Animated CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 31 - 41
+    Date: 10-05-2026 | 1:33 PM - 2:53 PM
+    =====================================-->
 </head>
-<body onload="protectPage(); loadSingleMarksheet();">
 
-<div class="dashboard">
+<body>
 
-  <aside class="sidebar">
-    <div class="brand">
-      <i class="ri-school-line"></i>
-      <span>MarksheetPro</span>
-    </div>
+  <div class="dashboard" id="mainDashboard">
 
-    <a href="dashboard.html"><i class="ri-dashboard-line"></i> Dashboard</a>
-    <a href="manage-marksheet.html" class="active"><i class="ri-file-list-3-line"></i> Manage Marksheet</a>
+    <aside class="sidebar" id="viewMarkSidebar">
+      <div class="brand">
+        <i class="ri-school-line"></i>
+        <span>MarksheetPro</span>
+      </div>
 
-    <a href="#" onclick="logoutSchool()"><i class="ri-logout-box-line"></i> Logout</a>
-  </aside>
+      <a href="./dashboard.html"><i class="ri-dashboard-line"></i> Dashboard</a>
+      <a href="./manage-marksheet.html" class="active"><i class="ri-file-list-3-line"></i> Manage Marksheet</a>
 
-  <main class="main-content">
+      <a href="#" onclick="logoutSchool()"><i class="ri-logout-box-line"></i> Logout</a>
+    </aside>
 
-    <div class="marksheet" id="marksheetPrintArea">
+    <main class="main-content" id="mainContent">
 
-      <div class="marksheet-header">
-        <img id="msLogo" src="">
-        <div>
-          <h2 id="msSchoolName"></h2>
-          <p id="msTagline"></p>
-          <p>Address: <span id="msAddress"></span></p>
-          <p>Phone: <span id="msNumber"></span></p>
+      <div class="marksheet" id="marksheetPrintArea">
+
+        <div class="marksheet-header">
+          <img id="msLogo" src="">
+          <div>
+            <h2 id="msSchoolName"></h2>
+            <p id="msTagline"></p>
+            <p>Address: <span id="msAddress"></span></p>
+            <p>Phone: <span id="msNumber"></span></p>
+          </div>
         </div>
-      </div>
 
-      <div class="student-preview">
-        <img id="msStudentPhoto" src="">
-        <div>
-          <h3 id="msStudentName"></h3>
-          <p>Class: <b id="msStudentClass"></b> | Roll: <b id="msStudentRoll"></b></p>
-          <p>Father: <b id="msFather"></b> | Mother: <b id="msMother"></b></p>
-          <p>Email: <b id="msEmail"></b></p>
+        <div class="student-preview">
+          <img id="msStudentPhoto" src="">
+          <div>
+            <h3 id="msStudentName"></h3>
+            <p>Class: <b id="msStudentClass"></b> | Roll: <b id="msStudentRoll"></b></p>
+            <p>Father: <b id="msFather"></b> | Mother: <b id="msMother"></b></p>
+            <p>Email: <b id="msEmail"></b></p>
+          </div>
         </div>
-      </div>
 
-      <div class="table-wrapper">
-        <table style="min-width:600px;">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Subject</th>
-              <th>Total</th>
-              <th>Obtained</th>
-            </tr>
-          </thead>
-          <tbody id="msSubjectBody"></tbody>
-        </table>
-      </div>
-
-      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:14px;">
-        <p><b>Total:</b> <span id="msTotal"></span></p>
-        <p><b>Obtained:</b> <span id="msObtained"></span></p>
-        <p><b>Percentage:</b> <span id="msPercentage"></span></p>
-        <p><b>Result:</b> <span id="msResult"></span></p>
-      </div>
-
-      <div class="footer-note">
-        <p><b>Creator:</b> <span id="msCreator"></span></p>
-        <p><b>Printed Date:</b> <span id="msPrinted"></span></p>
-        <p><b>Created Date:</b> <span id="msCreated"></span></p>
-        <p><b>Updated Date:</b> <span id="msUpdated"></span></p>
-
-        <div class="social-links">
-          <a href="#"><i class="ri-facebook-fill"></i></a>
-          <a href="#"><i class="ri-instagram-line"></i></a>
-          <a href="#"><i class="ri-linkedin-fill"></i></a>
-          <a href="#"><i class="ri-youtube-fill"></i></a>
+        <div class="table-wrapper">
+          <table style="min-width:600px;">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Subject</th>
+                <th>Total</th>
+                <th>Obtained</th>
+              </tr>
+            </thead>
+            <tbody id="msSubjectBody"></tbody>
+          </table>
         </div>
+
+        <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:14px;">
+          <p><b>Total:</b> <span id="msTotal"></span></p>
+          <p><b>Obtained:</b> <span id="msObtained"></span></p>
+          <p><b>Percentage:</b> <span id="msPercentage"></span></p>
+          <p><b>Result:</b> <span id="msResult"></span></p>
+        </div>
+
+        <div class="footer-note">
+          <p><b>Creator:</b> <span id="msCreator"></span></p>
+          <p><b>Created Date:</b> <span id="msCreated"></span></p>
+
+          <div class="social-links">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+
       </div>
 
-    </div>
+      <div style="display:flex; gap:12px; margin-top:18px; flex-wrap:wrap;" id="editBtn">
+        <button class="btn btn-primary" onclick="downloadPDF()">
+          <i class="ri-file-pdf-2-line"></i> Save as PDF
+        </button>
 
-    <div style="display:flex; gap:12px; margin-top:18px; flex-wrap:wrap;">
-      <button class="btn btn-primary" onclick="downloadPDF()">
-        <i class="ri-file-pdf-2-line"></i> Save as PDF
-      </button>
+        <button class="btn btn-outline" onclick="window.print()">
+          <i class="ri-printer-line"></i> Print
+        </button>
 
-      <button class="btn btn-outline" onclick="window.print()">
-        <i class="ri-printer-line"></i> Print
-      </button>
+        <a href="./manage-marksheet.html" class="btn btn-outline">
+          <i class="ri-arrow-left-line"></i> Back
+        </a>
+      </div>
 
-      <a href="manage-marksheet.html" class="btn btn-outline">
-        <i class="ri-arrow-left-line"></i> Back
-      </a>
-    </div>
+    </main>
 
-  </main>
+  </div>
 
-</div>
-
-<script src="script.js"></script>
 </body>
+
 </html>

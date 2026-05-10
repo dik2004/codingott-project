@@ -22,6 +22,28 @@ function isLogged() {
 
 isLogged();
 
+/* ================= ACCOUNT LOGOUT ================= */
+
+function logoutSchool() {
+
+    /* ================= LOAD ALL SCHOOL DATA ================= */
+    let loggedSchool = localStorage.getItem("loggedSchool");
+
+    if (loggedSchool !== null) {
+
+        let message = confirm("Are You Want To Sure To Logout");
+
+        if (message) {
+
+            localStorage.removeItem("loggedSchool");
+            window.open("../pages/login.html");
+
+        }
+
+    }
+
+}
+
 /* ================= LOAD PROFILE DETAILS ================= */
 
 function loadSchoolProfile() {
@@ -38,7 +60,7 @@ function loadSchoolProfile() {
 
         for (let i = 0; i < school.length; i++) {
 
-            if(school[i].schoolEmail === currentUser) {
+            if (school[i].schoolEmail === currentUser) {
 
                 schoolId = school[i].schoolId;
                 schoolLogo.src = school[i].schoolLogo;
@@ -54,3 +76,36 @@ function loadSchoolProfile() {
 }
 
 loadSchoolProfile();
+
+/* ================= LOAD STATS DETAILS ================= */
+
+function countStudent() {
+
+    let totalStudents = document.getElementById("totalStudents");
+    let students = JSON.parse(localStorage.getItem("students")) || [];
+
+    if (students.length !== 0) {
+
+        totalStudents.textContent = students.length;
+
+    }
+
+}
+
+countStudent();
+
+function countMarksheet() {
+
+    let marksheets = JSON.parse(localStorage.getItem("marksheets")) || [];
+    let totalMarksheets = document.getElementById("totalMarksheets");
+
+    if (marksheets.length !== 0) {
+
+        totalMarksheets.textContent = marksheets.length;
+
+    }
+
+}
+
+countMarksheet();
+

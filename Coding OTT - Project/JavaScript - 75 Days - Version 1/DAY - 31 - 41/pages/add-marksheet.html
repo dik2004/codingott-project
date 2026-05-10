@@ -1,113 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Add Marksheet</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fav Icon -->
+  <link rel="shortcut icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+    type="image/x-icon">
+  <title>JS - 75 DAYS - PROJECT</title>
+  <!-- I'm Using External JavaScript for Task -->
+  <script src="../js/add-marksheet.js" defer></script>
+  <!-- I'm Using External CSS for Task -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Remix Icon CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <!-- Animated CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+  <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 31 - 41
+    Date: 10-05-2026 | 11:35 AM - 12:38 PM
+    =====================================-->
 </head>
-<body onload="protectPage(); loadStudentDropdown();">
 
-<div class="dashboard">
+<body>
 
-  <aside class="sidebar">
-    <div class="brand">
-      <i class="ri-school-line"></i>
-      <span>MarksheetPro</span>
-    </div>
+  <div class="dashboard">
 
-    <a href="dashboard.html"><i class="ri-dashboard-line"></i> Dashboard</a>
-    <a href="add-student.html"><i class="ri-user-add-line"></i> Add Student</a>
-    <a href="manage-students.html"><i class="ri-team-line"></i> Manage Students</a>
-
-    <a href="add-marksheet.html" class="active"><i class="ri-file-add-line"></i> Add Marksheet</a>
-    <a href="manage-marksheet.html"><i class="ri-file-list-3-line"></i> Manage Marksheet</a>
-
-    <a href="#" onclick="logoutSchool()"><i class="ri-logout-box-line"></i> Logout</a>
-  </aside>
-
-  <main class="main-content">
-    <div class="card">
-      <h1 class="page-title">Add Marksheet</h1>
-      <p class="page-subtitle">Select student and add subjects.</p>
-
-      <div id="msgBox"></div>
-
-      <div class="input-group">
-        <label>Select Student</label>
-        <select id="studentSelect" onchange="fillStudentDetails()"></select>
+    <aside class="sidebar">
+      <div class="brand">
+        <i class="ri-school-line"></i>
+        <span>MarksheetPro</span>
       </div>
 
-      <div class="student-preview">
-        <img id="previewPhoto" src="https://via.placeholder.com/70">
-        <div>
-          <h3 id="previewName">Student Name</h3>
-          <p>
-            Class: <b id="previewClass">-</b> |
-            Roll: <b id="previewRoll">-</b>
-          </p>
-          <p>Father: <b id="previewFather">-</b> | Mother: <b id="previewMother">-</b></p>
-          <p>Email: <b id="previewEmail">-</b></p>
+      <a href="./dashboard.html"><i class="ri-dashboard-line"></i> Dashboard</a>
+      <a href="./add-student.html"><i class="ri-user-add-line"></i> Add Student</a>
+      <a href="./manage-students.html"><i class="ri-team-line"></i> Manage Students</a>
+
+      <a href="./add-marksheet.html" class="active"><i class="ri-file-add-line"></i> Add Marksheet</a>
+      <a href="./manage-marksheet.html"><i class="ri-file-list-3-line"></i> Manage Marksheet</a>
+
+      <a href="#" onclick="logoutSchool()"><i class="ri-logout-box-line"></i> Logout</a>
+    </aside>
+
+    <main class="main-content">
+      <div class="card">
+        <h1 class="page-title">Add Marksheet</h1>
+        <p class="page-subtitle">Select student and add subjects.</p>
+
+        <div id="msgBox"></div>
+
+        <div class="input-group">
+          <label>Select Student</label>
+          <select id="studentSelect" onchange="fillStudentDetails(this.value)"></select>
         </div>
-      </div>
 
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Subject</th>
-              <th>Total</th>
-              <th>Obtained</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody id="subjectTableBody"></tbody>
-        </table>
-      </div>
-
-      <form style="margin-top:18px;" onsubmit="addSubject(event)">
-        <div class="form-grid">
-          <div class="input-group">
-            <label>Subject Name</label>
-            <input type="text" id="subjectName">
-          </div>
-
-          <div class="input-group">
-            <label>Total Marks</label>
-            <input type="number" id="totalMarks">
-          </div>
-
-          <div class="input-group">
-            <label>Obtained Marks</label>
-            <input type="number" id="obtainedMarks">
-          </div>
-
-          <div class="input-group">
-            <label>Action</label>
-            <button class="btn btn-outline w-100" type="submit">
-              <i class="ri-add-line"></i> Add Subject
-            </button>
+        <div class="student-preview">
+          <img id="previewPhoto" src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg">
+          <div>
+            <h3 id="previewName">Student Name</h3>
+            <p>
+              Class: <b id="previewClass">-</b> |
+              Roll: <b id="previewRoll">-</b>
+            </p>
+            <p>Father: <b id="previewFather">-</b> | Mother: <b id="previewMother">-</b></p>
+            <p>Email: <b id="previewEmail">-</b></p>
           </div>
         </div>
-      </form>
 
-      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:20px;">
-        <button class="btn btn-success" onclick="saveMarksheet()">
-          <i class="ri-save-line"></i> Add / Save Marksheet
-        </button>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Subject</th>
+                <th>Total</th>
+                <th>Obtained</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="subjectTableBody"></tbody>
+          </table>
+        </div>
 
-        <a href="manage-marksheet.html" class="btn btn-outline">
-          <i class="ri-file-list-3-line"></i> Manage Marksheets
-        </a>
+        <form style="margin-top:18px;" onsubmit="addSubject(event)">
+          <div class="form-grid">
+            <div class="input-group">
+              <label>Subject Name</label>
+              <input type="text" id="subjectName">
+            </div>
+
+            <div class="input-group">
+              <label>Total Marks</label>
+              <input type="number" id="totalMarks">
+            </div>
+
+            <div class="input-group">
+              <label>Obtained Marks</label>
+              <input type="number" id="obtainedMarks">
+            </div>
+
+            <div class="input-group">
+              <label>Action</label>
+              <button class="btn btn-outline w-100" type="submit">
+                <i class="ri-add-line"></i> Add Subject
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:20px;">
+          <button class="btn btn-success" onclick="saveMarksheet()">
+            <i class="ri-save-line"></i> Add / Save Marksheet
+          </button>
+
+          <a href="manage-marksheet.html" class="btn btn-outline">
+            <i class="ri-file-list-3-line"></i> Manage Marksheets
+          </a>
+        </div>
+
       </div>
+    </main>
 
-    </div>
-  </main>
+  </div>
 
-</div>
-
-<script src="script.js"></script>
 </body>
+
 </html>

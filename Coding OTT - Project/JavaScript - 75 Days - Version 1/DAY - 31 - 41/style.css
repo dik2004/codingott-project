@@ -1044,3 +1044,18 @@ table th {
         position: relative;
     }
 }
+
+@media print {
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    #editBtn, #viewMarkSidebar {
+
+        display: none !important;
+
+    }
+
+}
