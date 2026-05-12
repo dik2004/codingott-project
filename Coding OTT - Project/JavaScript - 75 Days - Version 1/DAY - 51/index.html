@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>JS - 75 DAYS - PROJECT</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 51
+    Date: 12-05-2026 | 12:36 PM - 1:09 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="login-wrapper">
+        <div class="login-box">
+            <div class="login-header">
+                <div class="logo">
+                    <i class="ri-shield-user-line"></i>
+                </div>
+                <h2>Welcome Back</h2>
+                <p>Please login to continue</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <!-- Email -->
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <div class="input-field">
+                        <i class="ri-mail-line"></i>
+                        <input type="email" id="email" placeholder="Enter your email" required />
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="input-group">
+                    <label>Password</label>
+                    <div class="input-field">
+                        <i class="ri-lock-line"></i>
+                        <input type="password" id="password" placeholder="Enter your password" required />
+                        <i class="ri-eye-line toggle-password" id="togglePassword"></i>
+                    </div>
+                </div>
+
+                <!-- Remember Me -->
+                <div class="options">
+                    <label class="remember">
+                        <input type="checkbox" id="rememberMe" />
+                        Remember Me
+                    </label>
+
+                    <a href="#" class="forgot">Forgot Password?</a>
+                </div>
+
+                <!-- Button -->
+                <button type="submit" class="login-btn">
+                    Login <i class="ri-arrow-right-line"></i>
+                </button>
+            </form>
+
+            <div class="footer-text">
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <div class="popup-icon">
+                <i class="ri-checkbox-circle-fill"></i>
+            </div>
+            <h3>Login Successful</h3>
+            <p>You have successfully logged in to your account.</p>
+            <button id="closePopup">OK</button>
+        </div>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+
+</body>
+
+</html>
