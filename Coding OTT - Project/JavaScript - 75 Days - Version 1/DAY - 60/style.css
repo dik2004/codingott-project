@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4f8ff;
+    color: #111;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #005eff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header p {
+    margin-top: 8px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0px 10px 30px rgba(0, 94, 255, 0.15);
+    border: 1px solid rgba(0, 94, 255, 0.2);
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #005eff;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0047c2;
+}
+
+.output-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f0f6ff;
+    min-height: 150px;
+    border: 1px solid rgba(0, 94, 255, 0.2);
+}
+
+.output-box p {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.success {
+    background: rgba(0, 94, 255, 0.12);
+    border-left: 5px solid #005eff;
+}
+
+.error {
+    background: rgba(255, 0, 0, 0.12);
+    border-left: 5px solid red;
+}
+
+.warning {
+    background: rgba(255, 165, 0, 0.12);
+    border-left: 5px solid orange;
+}
+
+.info {
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #444;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .btn {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+}
