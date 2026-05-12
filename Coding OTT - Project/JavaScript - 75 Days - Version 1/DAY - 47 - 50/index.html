@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>JS - 75 DAYS - PROJECT</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 47 - 50
+    Date: 12-05-2026 | 11:15 AM - 12:33 PM
+    =====================================-->
+</head>
+
+<body>
+
+    <!-- ========== Audio Player Project UI ========== -->
+
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="ri-music-2-fill"></i>
+                <h2>Audio Player</h2>
+            </div>
+
+            <button class="btn" id="selectBtn">
+                <i class="ri-folder-music-line"></i>
+                <span>Select Music</span>
+            </button>
+
+            <input type="file" id="audioInput" accept="audio/*" hidden />
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+
+            <!-- No Music Found Screen -->
+            <section class="no-music active" id="noMusicScreen">
+                <div class="no-music-box">
+                    <i class="ri-emotion-sad-line"></i>
+                    <h3>No Music Found</h3>
+                    <p>Please select an audio file to start playing.</p>
+                </div>
+            </section>
+
+            <!-- Player Screen -->
+            <section class="player" id="playerScreen">
+
+                <!-- File Details -->
+                <div class="file-details">
+                    <div class="detail">
+                        <i class="ri-file-music-line"></i>
+                        <div>
+                            <p class="label">Music Name</p>
+                            <h4 id="musicName">---</h4>
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <i class="ri-hard-drive-2-line"></i>
+                        <div>
+                            <p class="label">Music Size</p>
+                            <h4 id="musicSize">---</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Section -->
+                <div class="progress-wrapper">
+                    <div class="time">
+                        <span id="currentTime">00:00</span>
+                        <span id="totalDuration">00:00</span>
+                    </div>
+
+                    <input type="range" id="progressBar" value="0" min="0" max="100" />
+                </div>
+
+                <!-- Controls -->
+                <div class="controls">
+                    <button class="control-btn" id="backwardBtn" title="Backward 10s">
+                        <i class="ri-rewind-mini-fill"></i>
+                    </button>
+
+                    <button class="control-btn play-btn" id="playPauseBtn" title="Play">
+                        <i class="ri-play-fill" id="playPauseIcon"></i>
+                    </button>
+
+                    <button class="control-btn" id="forwardBtn" title="Forward 10s">
+                        <i class="ri-speed-mini-fill"></i>
+                    </button>
+
+                    <button class="control-btn" id="muteBtn" title="Mute">
+                        <i class="ri-volume-up-fill" id="muteIcon"></i>
+                    </button>
+
+                    <button class="control-btn" id="loopBtn" title="Loop">
+                        <i class="ri-repeat-2-line" id="loopIcon"></i>
+                    </button>
+                </div>
+
+                <!-- Hidden Audio -->
+                <audio id="audio"></audio>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+
+</body>
+
+</html>
