@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>JS - 75 DAYS - PROJECT</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 44
+    Date: 12-05-2026 | 8:24 AM - 8:33 AM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="ri-image-line"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Image Vault</h1>
+                    <p>Upload, Preview & Manage Your Photos</p>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button class="btn btn-outline" id="clearAllBtn">
+                    <i class="ri-delete-bin-line"></i>
+                    Clear All
+                </button>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">
+                    <i class="ri-gallery-line"></i>
+                </div>
+                <h2>No Images Found</h2>
+                <p>Please upload your images using the button below.</p>
+            </div>
+
+            <!-- Gallery -->
+            <div class="gallery" id="gallery"></div>
+
+        </main>
+
+        <!-- Upload Bar Bottom -->
+        <div class="upload-bar">
+            <input type="file" id="imageInput" accept="image/*" hidden multiple />
+
+            <button class="btn btn-primary upload-btn" id="uploadBtn">
+                <i class="ri-upload-cloud-2-line"></i>
+                Upload Images
+            </button>
+        </div>
+
+    </div>
+
+    <!-- View Modal -->
+    <div class="modal" id="viewModal">
+        <div class="modal-overlay"></div>
+
+        <div class="modal-content">
+            <button class="modal-close" id="closeViewModal">
+                <i class="ri-close-line"></i>
+            </button>
+
+            <div class="modal-image-box">
+                <img id="modalImage" src="" alt="Preview Image" />
+            </div>
+
+            <div class="modal-info">
+                <p id="modalImageName">
+                    <i class="ri-image-2-line"></i>
+                    <span></span>
+                </p>
+                <p id="modalImageSize">
+                    <i class="ri-file-info-line"></i>
+                    <span></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirm Popup -->
+    <div class="popup" id="deletePopup">
+        <div class="popup-overlay"></div>
+
+        <div class="popup-box">
+            <div class="popup-icon">
+                <i class="ri-error-warning-line"></i>
+            </div>
+
+            <h2>Delete Image?</h2>
+            <p>This action cannot be undone. Are you sure you want to delete this image?</p>
+
+            <div class="popup-actions">
+                <button class="btn btn-outline" id="cancelDelete">
+                    Cancel
+                </button>
+                <button class="btn btn-danger" id="confirmDelete">
+                    Confirm Delete
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+</body>
+
+</html>
