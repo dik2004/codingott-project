@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary: #1e5eff;
+    --primary-dark: #1648c7;
+    --bg: #f4f8ff;
+    --white: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #dbeafe;
+    --shadow: 0 10px 30px rgba(30, 94, 255, 0.12);
+}
+
+/* ============================= */
+/* Custom Scrollbar (Full Page)  */
+/* ============================= */
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #1e5eff #eaf2ff;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eaf2ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #1e5eff, #1648c7);
+    border-radius: 10px;
+    border: 2px solid #eaf2ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #1648c7, #1e5eff);
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    padding: 20px;
+}
+
+.app {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 32px;
+    color: var(--primary);
+}
+
+.logo h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.tagline {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* Upload Section */
+.upload-section {
+    margin-top: 18px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    transition: 0.25s ease;
+}
+
+.btn:hover {
+    background: var(--primary-dark);
+}
+
+.btn i {
+    font-size: 18px;
+}
+
+/* PDF Details */
+.pdf-details {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    background: #f9fbff;
+}
+
+.pdf-details h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eaf2ff;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text);
+}
+
+.label i {
+    color: var(--primary);
+}
+
+.value {
+    color: var(--muted);
+    font-weight: 500;
+}
+
+/* Preview Section */
+.preview-section {
+    margin-top: 18px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    min-height: 500px;
+    position: relative;
+}
+
+/* No PDF Box */
+.no-pdf {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.no-pdf i {
+    font-size: 60px;
+    color: var(--primary);
+}
+
+.no-pdf h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.no-pdf p {
+    color: var(--muted);
+    font-size: 14px;
+    max-width: 400px;
+}
+
+/* iframe */
+.pdf-frame {
+    width: 100%;
+    height: 600px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-start;
+    }
+
+    .pdf-frame {
+        height: 450px;
+    }
+
+    .no-pdf {
+        height: 450px;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme" content="#F4F8FF">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+        type="image/x-icon">
+    <title>JS - 75 DAYS - PROJECT</title>
+    <!-- I'm Using External JavaScript for Task -->
+    <script src="./script.js" defer></script>
+    <!-- I'm Using External CSS for Task -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- Animated CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--===================================== 
+    Student: Mo. Sarfraj Shaikh
+    Course: JavaScript 75 DAYS - Version 1
+    DAY: 46
+    Date: 12-05-2026 | 10:52 AM - 11:12 AM
+    =====================================-->
+</head>
+
+<body>
+
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="ri-file-pdf-2-fill"></i>
+                <h2>PDF Viewer</h2>
+            </div>
+
+            <p class="tagline">Upload your PDF and preview instantly inside iframe.</p>
+        </header>
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <input type="file" id="pdfInput" accept="application/pdf" hidden />
+
+            <button class="btn" id="uploadBtn">
+                <i class="ri-upload-cloud-2-line"></i>
+                <span id="btnText">Select File</span>
+            </button>
+
+            <div class="pdf-details" id="pdfDetails">
+                <h3>PDF Details</h3>
+
+                <div class="detail-row">
+                    <span class="label"><i class="ri-file-text-line"></i> Name:</span>
+                    <span class="value" id="pdfName">---</span>
+                </div>
+
+                <div class="detail-row">
+                    <span class="label"><i class="ri-database-2-line"></i> Size:</span>
+                    <span class="value" id="pdfSize">---</span>
+                </div>
+
+                <div class="detail-row">
+                    <span class="label"><i class="ri-calendar-event-line"></i> Last Modified:</span>
+                    <span class="value" id="pdfDate">---</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preview Section -->
+        <section class="preview-section">
+            <div class="no-pdf" id="noPdfBox">
+                <i class="ri-file-warning-line"></i>
+                <h2>No PDF Found</h2>
+                <p>Please select a PDF file to preview here.</p>
+            </div>
+
+            <iframe id="pdfFrame" class="pdf-frame"></iframe>
+        </section>
+    </div>
+
+    <!-- 
+    
+    Note: (AI Codes)
+
+    Maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, kyunki mera HTML aur CSS ka concept clear hai, HTML aur CSS ka code jab mai khud likhta tha tab project ko complete karne me inki wajah se zyada samay lag raha tha.
+
+    Isiliye maine ChatGPT ka use karke sirf HTML aur CSS ke codes generate karwaye hain, lekin JavaScript ka code maine khud likha hai aur us par practice bhi ki hai.
+ 
+    -->
+
+</body>
+
+</html>
