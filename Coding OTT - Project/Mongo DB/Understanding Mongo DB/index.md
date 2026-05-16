@@ -447,28 +447,28 @@ repeat ho rahe ho.
 ```js
 
     {
-        title: "Reapted Author Book 1",
-        author: "Reapted Author",
+        title: "Repeated Author Book 1",
+        author: "Repeated Author",
         price: 10,
-        category: "Reapted Author Book Category 1"
+        category: "Repeated Author Book Category 1"
     },
     {
-        title: "Reapted Author Book 2",
-        author: "Reapted Author",
+        title: "Repeated Author Book 2",
+        author: "Repeated Author",
         price: 20,
-        category: "Reapted Author Book Category 2"
+        category: "Repeated Author Book Category 2"
     },
     {
-        title: "Reapted Author Book 3",
-        author: "Reapted Author",
+        title: "Repeated Author Book 3",
+        author: "Repeated Author",
         price: 30,
-        category: "Reapted Author Book Category 3"
+        category: "Repeated Author Book Category 3"
     },
     {
-        title: "Reapted Author Book 4",
-        author: "Reapted Author",
+        title: "Repeated Author Book 4",
+        author: "Repeated Author",
         price: 40,
-        category: "Reapted Author Book Category 4"
+        category: "Repeated Author Book Category 4"
     }
 
 ```
@@ -485,7 +485,7 @@ title "JavaScript Basics" ho.
         category: "webDevs"
     },
     {
-        title: "Paython",
+        title: "Python",
         author: "Raju",
         price: 355,
         category: "webDevs"
@@ -587,25 +587,25 @@ category different ho.
 ```js
 
     {
-        title: "Diffrent Category Book 1",
+        title: "Different Category Book 1",
         author: "differentiator",
         price: 3457,
         category: "Electronics"
     },
     {
-        title: "Diffrent Category Book 2",
+        title: "Different Category Book 2",
         author: "differentiator",
         price: 5467,
         category: "Plastics"
     },
     {
-        title: "Diffrent Category Book 3",
+        title: "Different Category Book 3",
         author: "differentiator",
         price: 6576,
-        category: "Cloths"
+        category: "Clothes"
     },
     {
-        title: "Diffrent Category Book 4",
+        title: "Different Category Book 4",
         author: "differentiator",
         price: 7456,
         category: "Vehicles"
@@ -1296,7 +1296,7 @@ name and age show karo.
 
 ```js
 
-   db.students.find({}, {_id: 0, age: 1, age:1})
+   db.students.find({}, {_id: 0, age: 1, grade:1})
    
 ```
 
@@ -1573,7 +1573,7 @@ category return karo where price = 999.
 
 ```js
 
-  db.books.findOne({price: 999}, {category: 1})
+  db.books.findOne({price: 999}, {title: 1, category: 1})
    
 ```
 
@@ -1924,7 +1924,7 @@ phir find().limit(2) run karo.
     author: "Mohit Gupta",
     price: 500,
     category: "Education"
-  }
+  },
   {
     title: "Social Science",
     author: "Abdul kalam",
@@ -1964,7 +1964,7 @@ retrieve karo but sirf title and author show karo.
 
 ```js
 
-    db.books.find({title: "Technology"}, {title: 1, author: 1})
+    db.books.find({category: "Technology"}, {title: 1, author: 1})
 
 ```
 
@@ -2139,7 +2139,7 @@ karo and limit(2) lagao.
 
 ```js
 
-    db.books.find({category: "Database"}, {_id: 0, title: 1})
+    db.books.findOne({category: "Database"}, {_id: 0, title: 1})
 
 ```
 
