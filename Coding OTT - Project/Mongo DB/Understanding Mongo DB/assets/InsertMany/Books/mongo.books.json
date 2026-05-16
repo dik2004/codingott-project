@@ -1,0 +1,693 @@
+[{
+  "_id": {
+    "$oid": "6a08066f94ad9c6379abc128"
+  },
+  "title": "Book 1",
+  "author": "Author 1",
+  "price": 100,
+  "category": "Category 1"
+},
+{
+  "_id": {
+    "$oid": "6a08066f94ad9c6379abc129"
+  },
+  "title": "Book 2",
+  "author": "Author 2 ",
+  "price": 200,
+  "category": "Category 2"
+},
+{
+  "_id": {
+    "$oid": "6a08066f94ad9c6379abc12a"
+  },
+  "title": "Book 3",
+  "author": "Author 3",
+  "price": 300,
+  "category": "Category 3"
+},
+{
+  "_id": {
+    "$oid": "6a08066f94ad9c6379abc12b"
+  },
+  "title": "Book 4",
+  "author": "Author 4",
+  "price": 400,
+  "category": "Category 4"
+},
+{
+  "_id": {
+    "$oid": "6a0806ea94ad9c6379abc12c"
+  },
+  "title": "Book 1",
+  "author": "Author 1",
+  "price": 100,
+  "category": "Technology"
+},
+{
+  "_id": {
+    "$oid": "6a0806ea94ad9c6379abc12d"
+  },
+  "title": "Book 2",
+  "author": "Author 2 ",
+  "price": 200,
+  "category": "Technology"
+},
+{
+  "_id": {
+    "$oid": "6a0806ea94ad9c6379abc12e"
+  },
+  "title": "Book 3",
+  "author": "Author 3",
+  "price": 300,
+  "category": "Technology"
+},
+{
+  "_id": {
+    "$oid": "6a0806ea94ad9c6379abc12f"
+  },
+  "title": "Book 4",
+  "author": "Author 4",
+  "price": 400,
+  "category": "Technology"
+},
+{
+  "_id": {
+    "$oid": "6a0806ea94ad9c6379abc130"
+  },
+  "title": "Book 5",
+  "author": "Author 5",
+  "price": 500,
+  "category": "Technology"
+},
+{
+  "_id": {
+    "$oid": "6a08074594ad9c6379abc131"
+  },
+  "title": "Fiction Book 1",
+  "author": "Author 1",
+  "price": 100,
+  "category": "Fiction"
+},
+{
+  "_id": {
+    "$oid": "6a08074594ad9c6379abc132"
+  },
+  "title": "Fiction Book 2",
+  "author": "Author 2 ",
+  "price": 200,
+  "category": "Fiction"
+},
+{
+  "_id": {
+    "$oid": "6a08074594ad9c6379abc133"
+  },
+  "title": "Fiction Book 3",
+  "author": "Author 3",
+  "price": 300,
+  "category": "Technology"
+},
+{
+  "_id": {
+    "$oid": "6a08074594ad9c6379abc134"
+  },
+  "title": "Fiction Book 4",
+  "author": "Author 4",
+  "price": 400,
+  "category": "Technology"
+},
+{
+  "_id": {
+    "$oid": "6a0807e994ad9c6379abc135"
+  },
+  "title": "Random Price 1",
+  "author": "Random Author 1",
+  "price": 99,
+  "category": "Random Category 1"
+},
+{
+  "_id": {
+    "$oid": "6a0807e994ad9c6379abc136"
+  },
+  "title": "Random Price 2",
+  "author": "Random Author 2",
+  "price": 199,
+  "category": "Random Category 2"
+},
+{
+  "_id": {
+    "$oid": "6a0807e994ad9c6379abc137"
+  },
+  "title": "Random Price 3",
+  "author": "Random Author 3",
+  "price": 299,
+  "category": "Random Category 3"
+},
+{
+  "_id": {
+    "$oid": "6a0807e994ad9c6379abc138"
+  },
+  "title": "Random Price 4",
+  "author": "Random Author 4",
+  "price": 399,
+  "category": "Random Category 4"
+},
+{
+  "_id": {
+    "$oid": "6a0807e994ad9c6379abc139"
+  },
+  "title": "Random Price 5",
+  "author": "Random Author 5",
+  "price": 499,
+  "category": "Random Category 5"
+},
+{
+  "_id": {
+    "$oid": "6a0807e994ad9c6379abc13a"
+  },
+  "title": "Random Price 6",
+  "author": "Random Author 6",
+  "price": 599,
+  "category": "Random Category 6"
+},
+{
+  "_id": {
+    "$oid": "6a08087294ad9c6379abc13b"
+  },
+  "title": "Reapted Author Book 1",
+  "author": "Reapted Author",
+  "price": 10,
+  "category": "Reapted Author Book Category 1"
+},
+{
+  "_id": {
+    "$oid": "6a08087294ad9c6379abc13c"
+  },
+  "title": "Reapted Author Book 2",
+  "author": "Reapted Author",
+  "price": 20,
+  "category": "Reapted Author Book Category 2"
+},
+{
+  "_id": {
+    "$oid": "6a08087294ad9c6379abc13d"
+  },
+  "title": "Reapted Author Book 3",
+  "author": "Reapted Author",
+  "price": 30,
+  "category": "Reapted Author Book Category 3"
+},
+{
+  "_id": {
+    "$oid": "6a08087294ad9c6379abc13e"
+  },
+  "title": "Reapted Author Book 4",
+  "author": "Reapted Author",
+  "price": 40,
+  "category": "Reapted Author Book Category 4"
+},
+{
+  "_id": {
+    "$oid": "6a0808ed94ad9c6379abc13f"
+  },
+  "title": "JavaScript Basics",
+  "author": "Raju",
+  "price": 344,
+  "category": "webDevs"
+},
+{
+  "_id": {
+    "$oid": "6a0808ed94ad9c6379abc140"
+  },
+  "title": "Paython",
+  "author": "Raju",
+  "price": 355,
+  "category": "webDevs"
+},
+{
+  "_id": {
+    "$oid": "6a0808ed94ad9c6379abc141"
+  },
+  "title": "Mern Stack",
+  "author": "Raju",
+  "price": 443,
+  "category": "webDevs"
+},
+{
+  "_id": {
+    "$oid": "6a0808ed94ad9c6379abc142"
+  },
+  "title": "Node.JS",
+  "author": "Raju",
+  "price": 645,
+  "category": "webDevs"
+},
+{
+  "_id": {
+    "$oid": "6a0808ed94ad9c6379abc143"
+  },
+  "title": "Tailwind CSS",
+  "author": "Raju",
+  "price": 346,
+  "category": "webDevs"
+},
+{
+  "_id": {
+    "$oid": "6a08096594ad9c6379abc144"
+  },
+  "title": "Mongo DB",
+  "author": "Sarfraj",
+  "price": 456,
+  "category": "Database"
+},
+{
+  "_id": {
+    "$oid": "6a08096594ad9c6379abc145"
+  },
+  "title": "SQL - Injection",
+  "author": "Sarfraj",
+  "price": 784,
+  "category": "server"
+},
+{
+  "_id": {
+    "$oid": "6a08096594ad9c6379abc146"
+  },
+  "title": "Non-SQL",
+  "author": "Sarfraj",
+  "price": 565,
+  "category": "server"
+},
+{
+  "_id": {
+    "$oid": "6a08096594ad9c6379abc147"
+  },
+  "title": "DBMS",
+  "author": "Sarfraj",
+  "price": 546,
+  "category": "server"
+},
+{
+  "_id": {
+    "$oid": "6a0809ca94ad9c6379abc148"
+  },
+  "title": "Acer",
+  "author": "",
+  "price": 999,
+  "category": "laptop"
+},
+{
+  "_id": {
+    "$oid": "6a0809ca94ad9c6379abc149"
+  },
+  "title": "Dell",
+  "author": "",
+  "price": 354,
+  "category": "laptop"
+},
+{
+  "_id": {
+    "$oid": "6a0809ca94ad9c6379abc14a"
+  },
+  "title": "Samsung",
+  "author": "",
+  "price": 657,
+  "category": "laptop"
+},
+{
+  "_id": {
+    "$oid": "6a0809ca94ad9c6379abc14b"
+  },
+  "title": "LG",
+  "author": "",
+  "price": 345,
+  "category": "laptop"
+},
+{
+  "_id": {
+    "$oid": "6a0809ca94ad9c6379abc14c"
+  },
+  "title": "Apple",
+  "author": "",
+  "price": 678,
+  "category": "laptop"
+},
+{
+  "_id": {
+    "$oid": "6a080a6894ad9c6379abc14d"
+  },
+  "title": "Diffrent Category Book 1",
+  "author": "differentiator",
+  "price": 3457,
+  "category": "Electronics"
+},
+{
+  "_id": {
+    "$oid": "6a080a6894ad9c6379abc14e"
+  },
+  "title": "Diffrent Category Book 2",
+  "author": "differentiator",
+  "price": 5467,
+  "category": "Plastics"
+},
+{
+  "_id": {
+    "$oid": "6a080a6894ad9c6379abc14f"
+  },
+  "title": "Diffrent Category Book 3",
+  "author": "differentiator",
+  "price": 6576,
+  "category": "Cloths"
+},
+{
+  "_id": {
+    "$oid": "6a080a6894ad9c6379abc150"
+  },
+  "title": "Diffrent Category Book 4",
+  "author": "differentiator",
+  "price": 7456,
+  "category": "Vehicles"
+},
+{
+  "_id": {
+    "$oid": "6a080b2994ad9c6379abc151"
+  },
+  "title": "Life Changer",
+  "author": "priya",
+  "price": 453,
+  "category": "success"
+},
+{
+  "_id": {
+    "$oid": "6a080b2994ad9c6379abc152"
+  },
+  "title": "Understand World",
+  "author": "priya",
+  "price": 565,
+  "category": "success"
+},
+{
+  "_id": {
+    "$oid": "6a080b2994ad9c6379abc153"
+  },
+  "title": "World War 3",
+  "author": "priya",
+  "price": 356,
+  "category": "success"
+},
+{
+  "_id": {
+    "$oid": "6a080b2994ad9c6379abc154"
+  },
+  "title": "SpiderMan 2",
+  "author": "Maaz",
+  "price": 908,
+  "category": "hollywood"
+},
+{
+  "_id": {
+    "$oid": "6a080b2994ad9c6379abc155"
+  },
+  "title": "Marvels",
+  "author": "Maaz",
+  "price": 786,
+  "category": "hollywood"
+},
+{
+  "_id": {
+    "$oid": "6a080b2994ad9c6379abc156"
+  },
+  "title": "Avengers",
+  "author": "Maaz",
+  "price": 546,
+  "category": "hollywood"
+},
+{
+  "_id": {
+    "$oid": "6a080e8d94ad9c6379abc172"
+  },
+  "title": "JavaScript Basics",
+  "author": "Ramesh Gupta",
+  "price": 350,
+  "category": "Programming"
+},
+{
+  "_id": {
+    "$oid": "6a080e8d94ad9c6379abc173"
+  },
+  "title": "MongoDB Guide",
+  "author": "Amit Sharma",
+  "price": 450,
+  "category": "Database"
+},
+{
+  "_id": {
+    "$oid": "6a080e8d94ad9c6379abc174"
+  },
+  "title": "Python for Beginners",
+  "author": "Neha Verma",
+  "price": 500,
+  "category": "Programming"
+},
+{
+  "_id": {
+    "$oid": "6a080e8d94ad9c6379abc175"
+  },
+  "title": "Mathematics Class 10",
+  "author": "S. R. Mehta",
+  "price": 250,
+  "category": "Education"
+},
+{
+  "_id": {
+    "$oid": "6a080e8d94ad9c6379abc176"
+  },
+  "title": "Science Fundamentals",
+  "author": "Pooja Singh",
+  "price": 300,
+  "category": "Education"
+},
+{
+  "_id": {
+    "$oid": "6a080e8d94ad9c6379abc177"
+  },
+  "title": "History of India",
+  "author": "Karan Roy",
+  "price": 400,
+  "category": "History"
+},
+{
+  "_id": {
+    "$oid": "6a080e8d94ad9c6379abc178"
+  },
+  "title": "English Grammar",
+  "author": "Riya Kapoor",
+  "price": 280,
+  "category": "Education"
+},
+{
+  "_id": {
+    "$oid": "6a080eaf94ad9c6379abc179"
+  },
+  "title": "C Programming",
+  "author": "Arjun Patel",
+  "price": 220,
+  "category": "Programming"
+},
+{
+  "_id": {
+    "$oid": "6a080eaf94ad9c6379abc17a"
+  },
+  "title": "Data Structures",
+  "author": "Vikas Sharma",
+  "price": 450,
+  "category": "Computer Science"
+},
+{
+  "_id": {
+    "$oid": "6a080eaf94ad9c6379abc17b"
+  },
+  "title": "Operating System",
+  "author": "Rahul Singh",
+  "price": 390,
+  "category": "Computer Science"
+},
+{
+  "_id": {
+    "$oid": "6a080eaf94ad9c6379abc17c"
+  },
+  "title": "Economics Basics",
+  "author": "Sneha Jain",
+  "price": 300,
+  "category": "Education"
+},
+{
+  "_id": {
+    "$oid": "6a080ecf94ad9c6379abc17d"
+  },
+  "title": "Physics Class 12",
+  "author": "R. K. Verma",
+  "price": 480,
+  "category": "Education"
+},
+{
+  "_id": {
+    "$oid": "6a080ecf94ad9c6379abc17e"
+  },
+  "title": "Chemistry Notes",
+  "author": "Anjali Mehta",
+  "price": 420,
+  "category": "Education"
+},
+{
+  "_id": {
+    "$oid": "6a080ecf94ad9c6379abc17f"
+  },
+  "title": "Biology Basics",
+  "author": "Deepak Roy",
+  "price": 350,
+  "category": "Education"
+},
+{
+  "_id": {
+    "$oid": "6a080ecf94ad9c6379abc180"
+  },
+  "title": "Hindi Vyakaran",
+  "author": "Suresh Sharma",
+  "price": 250,
+  "category": "Education"
+},
+{
+  "_id": {
+    "$oid": "6a080ecf94ad9c6379abc181"
+  },
+  "title": "Computer Fundamentals",
+  "author": "Mohit Gupta",
+  "price": 500,
+  "category": "Education"
+},
+{
+  "_id": {
+    "$oid": "6a080f0f94ad9c6379abc182"
+  },
+  "title": "Unique Book 101",
+  "author": "Author A",
+  "price": 300,
+  "category": "General"
+},
+{
+  "_id": {
+    "$oid": "6a080f0f94ad9c6379abc183"
+  },
+  "title": "Unique Book 102",
+  "author": "Author B",
+  "price": 350,
+  "category": "General"
+},
+{
+  "_id": {
+    "$oid": "6a080f0f94ad9c6379abc184"
+  },
+  "title": "Unique Book 103",
+  "author": "Author C",
+  "price": 400,
+  "category": "General"
+},
+{
+  "_id": {
+    "$oid": "6a080f0f94ad9c6379abc185"
+  },
+  "title": "Unique Book 104",
+  "author": "Author D",
+  "price": 450,
+  "category": "General"
+},
+{
+  "_id": {
+    "$oid": "6a080f3494ad9c6379abc186"
+  },
+  "title": "HTML & CSS",
+  "author": "Ravi Sharma",
+  "price": 250,
+  "category": "Web Development"
+},
+{
+  "_id": {
+    "$oid": "6a080f3494ad9c6379abc187"
+  },
+  "title": "React Basics",
+  "author": "Neha Singh",
+  "price": 500,
+  "category": "Web Development"
+},
+{
+  "_id": {
+    "$oid": "6a080f3494ad9c6379abc188"
+  },
+  "title": "Node.js Mastery",
+  "author": "Amit Verma",
+  "price": 550,
+  "category": "Programming"
+},
+{
+  "_id": {
+    "$oid": "6a080f3494ad9c6379abc189"
+  },
+  "title": "DBMS Concepts",
+  "author": "Karan Mehta",
+  "price": 450,
+  "category": "Database"
+},
+{
+  "_id": {
+    "$oid": "6a080f3494ad9c6379abc18a"
+  },
+  "title": "Networking Essentials",
+  "author": "Priya Gupta",
+  "price": 400,
+  "category": "Computer Science"
+},
+{
+  "_id": {
+    "$oid": "6a080f3494ad9c6379abc18b"
+  },
+  "title": "AI Introduction",
+  "author": "Sahil Roy",
+  "price": 650,
+  "category": "Technology"
+},
+{
+  "_id": {
+    "$oid": "6a080f3494ad9c6379abc18c"
+  },
+  "title": "Machine Learning",
+  "author": "Rohit Jain",
+  "price": 700,
+  "category": "Technology"
+},
+{
+  "_id": {
+    "$oid": "6a080f3494ad9c6379abc18d"
+  },
+  "title": "Java Complete Guide",
+  "author": "Simran Kaur",
+  "price": 600,
+  "category": "Programming"
+},
+{
+  "_id": {
+    "$oid": "6a080f3494ad9c6379abc18e"
+  },
+  "title": "Cyber Security Basics",
+  "author": "Arjun Singh",
+  "price": 480,
+  "category": "Security"
+},
+{
+  "_id": {
+    "$oid": "6a080f3494ad9c6379abc18f"
+  },
+  "title": "Cloud Computing",
+  "author": "Anjali Kapoor",
+  "price": 550,
+  "category": "Technology"
+}]

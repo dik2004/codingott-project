@@ -1,0 +1,243 @@
+[{
+  "_id": {
+    "$oid": "6a080cff94ad9c6379abc157"
+  },
+  "name": "Rahul Sharma",
+  "age": 20,
+  "grade": "B",
+  "city": "Delhi"
+},
+{
+  "_id": {
+    "$oid": "6a080cff94ad9c6379abc158"
+  },
+  "name": "Priya Verma",
+  "age": 19,
+  "grade": "A",
+  "city": "Mumbai"
+},
+{
+  "_id": {
+    "$oid": "6a080cff94ad9c6379abc159"
+  },
+  "name": "Amit Singh",
+  "age": 21,
+  "grade": "C",
+  "city": "Pune"
+},
+{
+  "_id": {
+    "$oid": "6a080cff94ad9c6379abc15a"
+  },
+  "name": "Neha Gupta",
+  "age": 22,
+  "grade": "B",
+  "city": "Jaipur"
+},
+{
+  "_id": {
+    "$oid": "6a080cff94ad9c6379abc15b"
+  },
+  "name": "Sahil Khan",
+  "age": 18,
+  "grade": "A",
+  "city": "Lucknow"
+},
+{
+  "_id": {
+    "$oid": "6a080da694ad9c6379abc15c"
+  },
+  "name": "Anjali Mehta",
+  "age": 20,
+  "grade": "A",
+  "city": "Delhi"
+},
+{
+  "_id": {
+    "$oid": "6a080da694ad9c6379abc15d"
+  },
+  "name": "Rohit Yadav",
+  "age": 23,
+  "grade": "B",
+  "city": "Noida"
+},
+{
+  "_id": {
+    "$oid": "6a080da694ad9c6379abc15e"
+  },
+  "name": "Simran Kaur",
+  "age": 19,
+  "grade": "A",
+  "city": "Chandigarh"
+},
+{
+  "_id": {
+    "$oid": "6a080da694ad9c6379abc15f"
+  },
+  "name": "Vikas Sharma",
+  "age": 24,
+  "grade": "C",
+  "city": "Bhopal"
+},
+{
+  "_id": {
+    "$oid": "6a080da694ad9c6379abc160"
+  },
+  "name": "Pooja Jain",
+  "age": 21,
+  "grade": "B",
+  "city": "Indore"
+},
+{
+  "_id": {
+    "$oid": "6a080da694ad9c6379abc161"
+  },
+  "name": "Arjun Patel",
+  "age": 22,
+  "grade": "A",
+  "city": "Ahmedabad"
+},
+{
+  "_id": {
+    "$oid": "6a080da694ad9c6379abc162"
+  },
+  "name": "Karan Malhotra",
+  "age": 18,
+  "grade": "B",
+  "city": "Delhi"
+},
+{
+  "_id": {
+    "$oid": "6a080da694ad9c6379abc163"
+  },
+  "name": "Sneha Roy",
+  "age": 25,
+  "grade": "C",
+  "city": "Kolkata"
+},
+{
+  "_id": {
+    "$oid": "6a080dd294ad9c6379abc164"
+  },
+  "name": "Riya Kapoor",
+  "age": 20,
+  "grade": "A",
+  "city": "Delhi"
+},
+{
+  "_id": {
+    "$oid": "6a080dd294ad9c6379abc165"
+  },
+  "name": "Mohit Agarwal",
+  "age": 22,
+  "grade": "A",
+  "city": "Jaipur"
+},
+{
+  "_id": {
+    "$oid": "6a080dd294ad9c6379abc166"
+  },
+  "name": "Sanya Singh",
+  "age": 19,
+  "grade": "A",
+  "city": "Mumbai"
+},
+{
+  "_id": {
+    "$oid": "6a080dd294ad9c6379abc167"
+  },
+  "name": "Aditya Mishra",
+  "age": 21,
+  "grade": "A",
+  "city": "Pune"
+},
+{
+  "_id": {
+    "$oid": "6a080dfb94ad9c6379abc168"
+  },
+  "name": "Nitin Sharma",
+  "age": 20,
+  "grade": "B",
+  "city": "Delhi"
+},
+{
+  "_id": {
+    "$oid": "6a080dfb94ad9c6379abc169"
+  },
+  "name": "Komal Verma",
+  "age": 22,
+  "grade": "A",
+  "city": "Delhi"
+},
+{
+  "_id": {
+    "$oid": "6a080dfb94ad9c6379abc16a"
+  },
+  "name": "Deepak Singh",
+  "age": 19,
+  "grade": "C",
+  "city": "Delhi"
+},
+{
+  "_id": {
+    "$oid": "6a080dfb94ad9c6379abc16b"
+  },
+  "name": "Ayesha Khan",
+  "age": 21,
+  "grade": "B",
+  "city": "Delhi"
+},
+{
+  "_id": {
+    "$oid": "6a080e2394ad9c6379abc16c"
+  },
+  "name": "Ravi Kumar",
+  "age": 18,
+  "grade": "B",
+  "city": "Patna"
+},
+{
+  "_id": {
+    "$oid": "6a080e2394ad9c6379abc16d"
+  },
+  "name": "Ishita Sharma",
+  "age": 19,
+  "grade": "A",
+  "city": "Delhi"
+},
+{
+  "_id": {
+    "$oid": "6a080e2394ad9c6379abc16e"
+  },
+  "name": "Manish Verma",
+  "age": 20,
+  "grade": "C",
+  "city": "Mumbai"
+},
+{
+  "_id": {
+    "$oid": "6a080e2394ad9c6379abc16f"
+  },
+  "name": "Aarti Singh",
+  "age": 21,
+  "grade": "B",
+  "city": "Jaipur"
+},
+{
+  "_id": {
+    "$oid": "6a080e2394ad9c6379abc170"
+  },
+  "name": "Harsh Patel",
+  "age": 23,
+  "grade": "A",
+  "city": "Surat"
+},
+{
+  "_id": {
+    "$oid": "6a080e2394ad9c6379abc171"
+  },
+  "name": "Naina Gupta",
+  "age": 25,
+  "grade": "B",
+  "city": "Kolkata"
+}]

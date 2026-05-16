@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "6a08003d94ad9c6379abc114"
+  },
+  "name": "Sarfraj",
+  "age": 18,
+  "grade": "A",
+  "city": "Mumbai"
+},
+{
+  "_id": {
+    "$oid": "6a08007c94ad9c6379abc115"
+  },
+  "name": "Aman",
+  "age": 21,
+  "grade": "B",
+  "city": "Mumbai"
+},
+{
+  "_id": {
+    "$oid": "6a0800cc94ad9c6379abc116"
+  },
+  "name": "Neha",
+  "age": 19,
+  "grade": "A",
+  "city": "Pune"
+},
+{
+  "_id": {
+    "$oid": "6a0800f694ad9c6379abc117"
+  },
+  "name": "Riya",
+  "age": 22,
+  "grade": "C",
+  "city": "Delhi"
+},
+{
+  "_id": {
+    "$oid": "6a08014e94ad9c6379abc118"
+  },
+  "name": "Karan",
+  "age": 20,
+  "grade": "A",
+  "city": "Jaipur"
+},
+{
+  "_id": {
+    "$oid": "6a08018894ad9c6379abc119"
+  },
+  "name": "Sahil",
+  "age": 18,
+  "grade": "B",
+  "city": "Lucknow"
+},
+{
+  "_id": {
+    "$oid": "6a0801af94ad9c6379abc11a"
+  },
+  "name": "Priya",
+  "age": 23,
+  "grade": "A",
+  "city": "Bhopal"
+},
+{
+  "_id": {
+    "$oid": "6a0801e094ad9c6379abc11b"
+  },
+  "name": "Anjali",
+  "age": 20,
+  "grade": "C",
+  "city": "Noida"
+},
+{
+  "_id": {
+    "$oid": "6a08020d94ad9c6379abc11c"
+  },
+  "name": "Rohit",
+  "age": 24,
+  "grade": "B",
+  "city": "Chandigarh"
+},
+{
+  "_id": {
+    "$oid": "6a08023894ad9c6379abc11d"
+  },
+  "name": "Simran",
+  "age": 19,
+  "grade": "A",
+  "city": "Amritsar"
+},
+{
+  "_id": {
+    "$oid": "6a08026e94ad9c6379abc11e"
+  },
+  "name": "Vikas",
+  "age": 22,
+  "grade": "B",
+  "city": "Kolkata"
+},
+{
+  "_id": {
+    "$oid": "6a08029b94ad9c6379abc11f"
+  },
+  "name": "Ishaan",
+  "age": 21,
+  "grade": "A",
+  "city": "Hyderabad"
+},
+{
+  "_id": {
+    "$oid": "6a0802d594ad9c6379abc120"
+  },
+  "name": "Meera",
+  "age": 20,
+  "grade": "C",
+  "city": "Indore"
+},
+{
+  "_id": {
+    "$oid": "6a0802fa94ad9c6379abc121"
+  },
+  "name": "Nitin",
+  "age": 25,
+  "grade": "B",
+  "city": "Patna"
+},
+{
+  "_id": {
+    "$oid": "6a08032894ad9c6379abc122"
+  },
+  "name": "Divya",
+  "age": 18,
+  "grade": "A",
+  "city": "Ranchi"
+},
+{
+  "_id": {
+    "$oid": "6a08035e94ad9c6379abc123"
+  },
+  "name": "Harsh",
+  "age": 23,
+  "grade": "B",
+  "city": "Gurgaon"
+},
+{
+  "_id": {
+    "$oid": "6a08038b94ad9c6379abc124"
+  },
+  "name": "Pooja",
+  "age": 19,
+  "grade": "C",
+  "city": "Kanpur"
+},
+{
+  "_id": {
+    "$oid": "6a0803b994ad9c6379abc125"
+  },
+  "name": "Deepak",
+  "age": 21,
+  "grade": "A",
+  "city": "Agra"
+},
+{
+  "_id": {
+    "$oid": "6a0803e494ad9c6379abc126"
+  },
+  "name": "Sneha",
+  "age": 22,
+  "grade": "B",
+  "city": "Surat"
+},
+{
+  "_id": {
+    "$oid": "6a08041a94ad9c6379abc127"
+  },
+  "name": "Arjun",
+  "age": 20,
+  "grade": "A",
+  "city": "Ahmedabad"
+}]
