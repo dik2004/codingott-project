@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Ott JS V1 - Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="brand">
+            <div class="brand-logo"><i class="ri-code-s-slash-line"></i></div>
+            <div class="brand-title"><strong>Coding Ott Projects</strong><span>JavaScript V1</span></div>
+        </div>
+        <div class="nav-right">
+            <button class="nav-btn" onclick="scrollToProjects()"><i
+                    class="ri-layout-grid-line"></i><span>Projects</span></button>
+            <button class="nav-btn" onclick="scrollToFooter()"><i
+                    class="ri-information-line"></i><span>About</span></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <div class="search-wrap">
+                <div class="search-box">
+                    <i class="ri-search-2-line"></i>
+                    <input id="searchInput" type="text" placeholder="Search projects by title, tech, or keywords..." />
+                </div>
+            </div>
+        </div>
+
+        <div id="projectsSection" class="cards-grid"></div>
+        <div id="emptyState" class="empty"><i class="ri-error-warning-line" style="font-size:22px;"></i>
+            <p style="margin-top:10px;">No matching project found. Try another keyword.</p>
+        </div>
+
+        <footer id="footerSection">
+            <div>© <span id="year"></span> Coding Ott JS V1 - Projects. All Rights Reserved.</div>
+            <div style="margin-top:6px;">Developed by <a href="#" target="_blank">Mo. Sarfraj Shaikh</a></div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
