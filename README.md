@@ -22,9 +22,7 @@ Is section me maine **JavaScript ka use karke banaye gaye projects** ke **live d
 
 🔗 **All JS Project:** [Visit Now](https://coding-ott-all-js-project-list.netlify.app)
 
-🔗 **JS 75 HARD DAYS - V1:** [Coming Soon](#)
-
-🔗 **JS 75 HARD DAYS - V2:** [Coming Soon](#)
+🔗 **JS 75 HARD DAYS - V1:** [Coming Soon](https://coding-ott-all-js-v1-project-list.netlify.app/)
 
 ---
 
