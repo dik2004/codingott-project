@@ -52,12 +52,25 @@ Agar aapko **sirf MongoDB ka source code** chahiye — toh niche diya gaya repos
 
 ---
 
+## 📁 React JS - 75 Days Source Code Repository
+Agar aapko **sirf ReactJs ka source code** chahiye — toh niche diya gaya repository link visit karein.
+
+**Is repo me:**
+- Abhi tak banaye gaye **saare ReactJS Codes**
+- Proper folder structure ke sath
+- Clean aur readable code
+
+🔗 **Repo Link:** [Click Here To View](https://github.com/Sarfraj-Shaikh/codingott-project/tree/main/Coding%20OTT%20-%20Project/React%2075%20Days)
+
+---
+
 ## 🛠 Tech Stack Used
 Ye projects mainly **frontend development** par focus karte hain.
 
 - **HTML** – Structure ke liye  
 - **CSS** – Styling aur layout ke liye  
 - **JavaScript** – Logic, DOM manipulation aur interactivity ke liye  
+- **React JS** – Single Page Application (SPA) 
 
 ---
 
