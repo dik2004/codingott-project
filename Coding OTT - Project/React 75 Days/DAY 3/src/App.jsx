@@ -1,46 +1,42 @@
-const App = () => {
+import { useState } from "react";
+
+function App() {
+  const [count, setCount] = useState(0);
 
   return (
+    <div
+      style={{
+        textAlign: "center",
+        marginTop: "100px",
+        fontFamily: "Arial",
+      }}
+    >
+      <h1>Counter App</h1>
 
-    <div style={{
-      width: "100%",
-      height: "100vh",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      textAlign: "center"
-    }}>
+      <h2>{count}</h2>
 
-      <div style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "5px",
-        flexDirection: "column",
-      }}>
+      <button
+        onClick={() => setCount(count + 1)}
+        style={{
+          padding: "10px 20px",
+          marginRight: "10px",
+          cursor: "pointer",
+        }}
+      >
+        Increment
+      </button>
 
-        <h1 style={{
-          fontSize: "36px",
-        }}>
-
-          Hello, World!
-
-        </h1>
-
-        <p style={{
-          fontSize: "16px",
-          color: "#2b2b2b"
-        }}>
-
-          Built By Sarfraj Shaikh
-
-        </p>
-
-      </div>
-
+      <button
+        onClick={() => setCount(count - 1)}
+        style={{
+          padding: "10px 20px",
+          cursor: "pointer",
+        }}
+      >
+        Decrement
+      </button>
     </div>
-  )
+  );
+}
 
-};
-
-export default App
+export default App;
